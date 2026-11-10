@@ -1,0 +1,17 @@
+{
+  "name": "mvc-secrecy-demo",
+  "version": "2.1.0",
+  "private": true,
+  "description": "Static MVC app plus a device-bound, one-time capability layer (MVC + S).",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node src/test/smoke.mjs",
+    "test:security": "node src/test/security.mjs",
+    "test:browser": "node src/test/browser/browser.mjs",
+    "test:browser:adversarial": "node src/test/browser/adversarial.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -1,0 +1,15 @@
+# Runtime artifacts
+tmp/
+*.log
+
+# Dependencies
+node_modules/
+
+# Environment / local secrets
+.env
+.env.*
+*.pem
+*.key
+
+# OS / editor
+.DS_Store

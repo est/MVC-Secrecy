@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Secrecy — MVC + capability demo</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#/home" aria-label="Secrecy home">
+        <span class="brand-mark">S</span>
+        <span>Secrecy <em>MVC</em></span>
+      </a>
+      <nav class="nav" aria-label="Main views">
+        <a href="#/home" data-nav="home">Home</a>
+        <a href="#/chat" data-nav="chat">Chat</a>
+        <a href="#/profile" data-nav="profile">Profile</a>
+        <a href="#/login" data-nav="login">Device</a>
+      </nav>
+      <span class="top-note">one-use · scoped · device-bound</span>
+    </header>
+
+    <main id="app" aria-live="polite"></main>
+
+    <footer class="footer">
+      <span>v2.1: atomic PoP + capability consume, action-time presence, per-principal ACLs, scoped audit.</span>
+      <span>Presence uses a demo console code; production should use WebAuthn UV.</span>
+    </footer>
+
+    <div id="modal-root"></div>
+    <div id="toast" aria-live="assertive"></div>
+
+    <noscript>This demo needs JavaScript and WebCrypto.</noscript>
+
+    <script src="/protocol.js"></script>
+    <script src="/policy.js"></script>
+    <script src="/presence.js"></script>
+    <script src="/demo-hooks.js"></script>
+    <script src="/secrecy.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>
